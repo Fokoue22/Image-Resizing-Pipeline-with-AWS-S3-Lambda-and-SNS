@@ -20,3 +20,10 @@ In this project, we will be creating `two buckets`. The first bucket will be use
 
 ### 2. Enter the name of `Bucket2` and click on `Create bucket.`
 ![alt text](bucket2.png)
+
+### 3. Now, let’s create an `SNS topic` and an `SNS subscription` before creating a `lambda function.` First click on Create topic. Select Standard type SNS topic and enter the suitable name for your SNS topic and click on `Create topic.`
+
+![alt text](sns-topic.png)
+
+### 4. As you can see in the below screenshot, we have configured the SNS topic. Now, click on `Create subscription` to add your `email address.`
+![alt text](subscription.png)
