@@ -15,10 +15,8 @@ let’s dive into the implementation details and automate the image resizing pro
 In this project, we will be creating `two buckets`. The first bucket will be used to store the `original images` that we want to resize. The second bucket will be dedicated to storing the `resized images`. The resizing process will be automated through an `AWS Lambda function`, which will automatically upload the resized images to the `second bucket.`
 
 
-### 1. Creating the first S3 bucket by clicking on `Create bucket.`
+### 1. Enter the name of `Bucket1` and click on `Create bucket.`
+![alt text](bucket1.png)
 
-
-### 2. Enter the name of `Bucket1` and click on `Create bucket.`
-
-
-### 3. Enter the name of `Bucket2` and click on `Create bucket.`
+### 2. Enter the name of `Bucket2` and click on `Create bucket.`
+![alt text](bucket2.png)
