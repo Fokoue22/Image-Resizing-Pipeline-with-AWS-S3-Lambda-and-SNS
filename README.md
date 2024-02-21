@@ -27,3 +27,14 @@ In this project, we will be creating `two buckets`. The first bucket will be use
 
 ### 4. As you can see in the below screenshot, we have configured the SNS topic. Now, click on `Create subscription` to add your `email address.`
 ![alt text](subscription.png)
+
+### 5. After creating Subscription, you will get a notification on your given mail address if not, please check your spam box. The mail will look like the below screenshot.
+
+Click on Confirm subscription to get the notification for the resized image.
+![alt text](image.png)
+
+### 6. Once you confirm your subscription. The status should be `Confirmed` from Pending status.
+
+Here, we configured the SNS topic and subscription.
+
+![alt text](confirm-subscription.png)
