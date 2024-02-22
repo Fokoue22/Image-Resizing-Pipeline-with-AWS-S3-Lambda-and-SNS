@@ -34,13 +34,13 @@ In this project, we will be creating `two buckets`. The first bucket will be use
 
 ### 5. After creating Subscription, you will get a notification on your given mail address if not, please check your spam box. The mail will look like the below screenshot.
 
-Click on Confirm subscription to get the notification for the resized image.
+* Click on Confirm subscription to get the notification for the resized image.
 ![alt text](image.png)
 
 
 ### 6. Once you confirm your subscription. The status should be `Confirmed` from Pending status.
 
-Here, we configured the SNS topic and subscription.
+* Here, we configured the SNS topic and subscription.
 
 ![alt text](confirm-subscription.png)
 
@@ -58,7 +58,27 @@ Here, we configured the SNS topic and subscription.
 
 ### 9. Now, we need to configure lots of things in the lambda function. Let’s start with `runtime settings`, that is, exactly under the code itself. `Click on Edit` Now, add the `handler name` according to your Python code name and click on Save.
 
-My lambda function code name is `lambda-code` and handler name is `handler`. So, I have written `lambda-code.handler.`
+* My lambda function code name is `lambda-code` and handler name is `handler`. So, I have written `lambda-code.handler.`
 
 ![alt text](runtime-settings.png)
+
+
+
+### 10. In our Python code, we have to provide `Bucket2- resized-bucket name and SNS topic Arn`. But instead of hardcoding it, we will use Lambda environment variables and we will pass our information.
+
+* To do that, Go to the `configuration section`, under click on `Environment variables`, and click on `edit.`
+* Add the SNS topic arn and S3 bucket name of Bucket2 according to your service name and on and click on Save.
+
+![alt text](environment-variable.png)
+
+
+
+### 11. In the lambda function, we have to increase the `timeout and Memory size` because the lambda function needs more time and memory to perform the resizing task.
+
+* To do that, Go to the `Configuration tab-> General configuration section -> click on edit`. Add the `timeout 1 min and give memory 256MB`. 
+* It would be enough to perform our task.
+
+![alt text](timeout.png)
+
+
 
