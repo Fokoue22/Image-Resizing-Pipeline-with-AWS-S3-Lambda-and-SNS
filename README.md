@@ -113,7 +113,36 @@ The final IAM role has the below permissions list.
 ### 16. Now, we have configured all the things related to the Lambda function. It’s time to test it.
 
 * To do that click on Test -> Configure test event.
+* Add the Event-name, the template should be s3 put replace the few things that are given in the below screenshot, and click on Save.
 
 
 
+## 17. Now, don’t run the lambda manually. Just upload an image to Bucket1 and see the magic below.
 
+
+## Outputs:
+
+### Uploading an Image to the Bucket1.
+
+
+
+### The Image is of 1.9MB in the Bucket 1.
+
+
+
+### The Image has been resized automatically from 1.9MB to 355.3KB.
+
+
+
+### Hurray, We have received the mail as well.
+
+
+
+## Conclusion
+
+In conclusion, we have successfully implemented an automated image resizing system using `AWS S3, Lambda, and SNS.` This solution allows us to store the original images in one bucket and automatically resize and store them in another bucket. The integration of Lambda and SNS provides real-time notifications about the resizing process. By leveraging these powerful AWS services, we have simplified the image management workflow, improved efficiency, and enhanced user experience.
+
+
+
+## Author
+FOKOUE THOMAS 
