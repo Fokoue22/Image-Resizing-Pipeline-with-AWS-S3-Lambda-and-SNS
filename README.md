@@ -82,3 +82,38 @@ In this project, we will be creating `two buckets`. The first bucket will be use
 
 
 
+### 12. Now, we need to add one `PIL layer for our Python code.`
+
+* Click on Add a layer.
+* Add the ARN of the layer arn:aws:lambda:us-east-1:770693421928:layer:Klayers-p39-pillow:1 and click on Save.
+
+![alt text](layer.png)
+
+
+### 13. Let’s do the `IAM role configuration for our Lambda function.` Go to `IAM -> roles -> ‘search for your lambda name role’` and click on the role.
+
+* Here we have only one permission that is related to see the logs of our lambda function in loggroup. But we need two more permissions which is `SNSFullAccess` to send the mail to the person and `S3FullAccess` to get the images and store the images in the respective buckets.
+* To do that, Click on `Add permissions and select Attach policy.`
+
+
+
+
+### 14. Now, find the two permissions one by one `SNSFullAccess and S3FullAccess,` and check the box on the left of the permissions. After doing both, click on Add permissions.
+
+The final IAM role has the below permissions list.
+
+
+
+### 15. Finally, We have to add a `trigger for the Lambda function.` So whenever someone uploads an image to Bucket1. The lambda function will trigger and start the process of resizing the image and doing the other respective things.
+
+* Add the S3 as `source,` Bucket1 which will trigger the Lambda function, and click on Add.
+
+
+
+### 16. Now, we have configured all the things related to the Lambda function. It’s time to test it.
+
+* To do that click on Test -> Configure test event.
+
+
+
+
