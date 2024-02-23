@@ -110,11 +110,14 @@ The final IAM role has the below permissions list.
 
 ![alt text](triggerS3.png)
 
+
+
 ### 16. Now, we have configured all the things related to the Lambda function. It’s time to test it.
 
 * To do that click on Test -> Configure test event.
 * Add the Event-name, the template should be s3 put replace the few things that are given in the below screenshot, and click on Save.
 
+![alt text](test-event.png)
 
 
 ## 17. Now, don’t run the lambda manually. Just upload an image to Bucket1 and see the magic below.
